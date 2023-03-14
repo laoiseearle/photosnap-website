@@ -56,11 +56,12 @@ header {
   }
 }
 
-.header nav {
+.header-nav {
   display: none;
 }
 
-.nav-open {
+.menu-open {
+  display: block;
   background-color: white;
   position: fixed;
   text-align: center;
