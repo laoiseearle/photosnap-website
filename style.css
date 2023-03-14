@@ -5,3 +5,92 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+/* ------------------------- */
+/* -------- Header -------- */
+/* ----------------------- */
+
+header {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header {
+  padding-block: 1.75rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 10.625rem;
+}
+
+@media (hover: hover) {
+  .ham-icon:hover {
+    cursor: pointer;
+  }
+}
+
+.header nav {
+  display: none;
+}
+
+.nav-open {
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.navigation-links {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.navigation-links li {
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.header button {
+  margin-top: 1.25rem;
+  width: 100%;
+  padding-block: 0.875rem;
+  color: #fff;
+  background-color: #000;
+  font-size: 0.9375rem;
+}
+
+main {
+  margin-top: 4.5rem;
+}
