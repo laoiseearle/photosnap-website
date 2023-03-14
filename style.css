@@ -19,15 +19,30 @@ a {
   text-decoration: none;
 }
 
+/* ---- Buttons ---- */
+
 button {
   border: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
 }
 
+.transparent-btn {
+  display: flex;
+  position: relative;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
 @media (hover: hover) {
   button:hover {
     cursor: pointer;
+  }
+
+  .transparent-btn:hover span {
+    text-decoration: underline;
   }
 }
 
@@ -130,21 +145,6 @@ main {
   font-size: 0.9375rem;
 }
 
-.hero-btn {
-  display: flex;
-  position: relative;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  background-color: transparent;
-}
-
-@media (hover: hover) {
-  .hero-btn:hover span {
-    text-decoration: underline;
-  }
-}
-
 .hero-btn span {
   padding-right: 1.625rem;
 }
@@ -175,5 +175,57 @@ main {
 }
 
 .hero-item-create .hero-btn img {
+  filter: invert(1);
+}
+
+/* --------------------------------------- */
+/* -------- Home Stories Section -------- */
+/* ------------------------------------- */
+
+.home-stories-grid {
+  display: grid;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  filter: brightness(0.6) saturate(1.2);
+}
+
+.grid-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-inline: 2rem;
+  color: #fff;
+}
+
+.grid-item-info h3 {
+  font-size: 1.125rem;
+  padding-bottom: 0.5rem;
+}
+
+.grid-item-info p {
+  font-size: 0.8125rem;
+  padding-bottom: 1rem;
+}
+
+.grid-item-info hr {
+  margin-bottom: 1.25rem;
+  opacity: 0.25;
+  border-top: none;
+}
+
+.grid-item-info button {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.grid-item-info button img {
   filter: invert(1);
 }
