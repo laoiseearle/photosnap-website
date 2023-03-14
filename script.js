@@ -3,11 +3,11 @@ const menu = document.getElementById('menu');
 
 const menuToggle = () => {
   if (menu.classList.contains('menu-open')) {
-    hamburger.src = 'assets/shared/mobile/close.svg';
+    hamburger.src = 'assets/shared/mobile/menu.svg';
     menu.classList.remove('menu-open');
     document.body.style.overflow = 'visible';
   } else {
-    hamburger.src = 'assets/shared/mobile/menu.svg';
+    hamburger.src = 'assets/shared/mobile/close.svg';
     menu.classList.add('menu-open');
     document.body.style.overflow = 'hidden';
   }
