@@ -230,3 +230,35 @@ main {
 .grid-item-info button img {
   filter: invert(1);
 }
+
+/* ---------------------------------------- */
+/* -------- Home Features Section -------- */
+/* -------------------------------------- */
+
+.home-features-section {
+  padding-block: 5rem;
+  margin: auto;
+}
+
+.home-features-grid {
+  display: grid;
+  gap: 3.5rem;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.home-features-grid img {
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.home-features-section h3 {
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.home-features-section p {
+  font-size: 0.9375rem;
+  opacity: 0.6;
+  line-height: 25px;
+}
