@@ -190,8 +190,9 @@ main {
   position: relative;
 }
 
-.grid-item img {
+.grid-img {
   filter: brightness(0.6) saturate(1.2);
+  width: 100%;
 }
 
 .grid-item-info {
