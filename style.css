@@ -122,6 +122,10 @@ main {
   margin-top: 4.5rem;
 }
 
+.overlay {
+  filter: brightness(0.4);
+}
+
 /* ------------------------------- */
 /* -------- Hero Section -------- */
 /* ----------------------------- */
@@ -129,6 +133,7 @@ main {
 .hero-item-info {
   padding-block: 4.5rem;
   padding-inline: 2.0625rem 1.5rem;
+  background-color: #fff;
 }
 
 .hero-item-info h2 {
@@ -238,6 +243,7 @@ main {
 .home-features-section {
   padding-block: 5rem;
   margin: auto;
+  background-color: #fff;
 }
 
 .home-features-grid {
