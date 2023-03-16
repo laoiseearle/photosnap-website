@@ -268,3 +268,63 @@ main {
   opacity: 0.6;
   line-height: 25px;
 }
+
+/* ------------------------- */
+/* -------- Footer -------- */
+/* ----------------------- */
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  padding: 3.5rem 2rem;
+  justify-items: center;
+}
+
+.footer .logo {
+  padding-bottom: 2rem;
+}
+
+.social-links-footer {
+  display: flex;
+  gap: 0.8125rem;
+  padding-bottom: 3rem;
+}
+
+.social-links-footer img {
+  filter: brightness(0) invert(1);
+}
+
+.navigation-links-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 7.5rem;
+}
+
+.navigation-links-footer a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.footer button {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.footer button img {
+  filter: invert(1);
+}
+
+.footer p {
+  opacity: 0.5;
+  /* font-weight: 400; */
+  font-size: 0.9375rem;
+}
