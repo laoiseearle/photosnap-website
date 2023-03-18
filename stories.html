@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stories</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          src="assets/shared/desktop/logo.svg"
+          alt="Logo for Photosnap"
+          class="logo"
+        />
+        <img
+          src="assets/shared/mobile/menu.svg"
+          alt="Menu"
+          class="ham-icon"
+          id="ham"
+          onclick="menuToggle()"
+        />
+        <nav class="header-nav" id="menu">
+          <ul class="navigation-links">
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <button type="button" class="invite-btn">Get an invite</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="stories-hero-section">
+        <div class="hero-item hero-item-stories">
+          <picture>
+            <source
+              media="(min-width: 72rem)"
+              srcset="assets/stories/desktop/moon-of-appalacia.jpg"
+            />
+            <source
+              media="(min-width: 37rem)"
+              srcset="assets/stories/tablet/moon-of-appalacia.jpg"
+            />
+            <img
+              src="assets/stories/mobile/moon-of-appalacia.jpg"
+              alt="Photo of moon of appalachia"
+            />
+          </picture>
+
+          <div class="hero-item-info">
+            <div class="info-wrapper">
+              <p class="last-month">Last month's featured story</p>
+              <h2>Hazy full moon of appalachia</h2>
+
+              <p class="date">
+                March 2nd 2020 <strong>by John Appleseed</strong>
+              </p>
+
+              <p class="story-summary">
+                The dissected plateau area, while not actually made up of
+                geological mountains, is popularly called "mountains,"
+                especially in eastern Kentucky and West Virginia, and while the
+                ridges are not high, the terrain is extremely rugged.
+              </p>
+
+              <button type="button" class="hero-btn transparent-btn">
+                <span>Get an invite </span>
+                <img
+                  src="assets/shared/desktop/arrow.svg"
+                  alt="Right arrow icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="story-grid">
+          <div class="grid-item">
+            <picture>
+              <source
+                media="(min-width: 72rem)"
+                srcset="assets/stories/desktop/mountains.jpg"
+              />
+              <img
+                src="assets/stories/mobile/mountains.jpg"
+                alt="Photo of mountains"
+                class="grid-img"
+              />
+            </picture>
+
+            <div class="grid-item-info">
+              <p class="story-date">April 16th 2020</p>
+              <h3>The Mountains</h3>
+              <p>by John Appleseed</p>
+              <hr />
+
+              <button type="button" class="transparent-btn">
+                <span>Read story</span>
+                <img
+                  src="assets/shared/desktop/arrow.svg"
+                  alt="Right arrow icon"
+                />
+              </button>
+            </div>
+
+            </div>
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/cityscapes.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/cityscapes.jpg"
+                  alt="Photo of a city at sunset"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">April 14th 2020</p>
+                <h3>Sunset Cityscapes</h3>
+                <p>by Benjamin Cruz</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/18-days-voyage.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/18-days-voyage.jpg"
+                  alt="Silhouette of a man walking across a sunset background"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">April 11th 2020</p>
+                <h3>18 Days Voyage</h3>
+                <p>by Alexei Borodin</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/architecturals.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/architecturals.jpg"
+                  alt="Photo of a building at an angle"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">April 9th 2020</p>
+
+                <h3>Architecturals</h3>
+                <p>by Samantha Brooke</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/world-tour.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/world-tour.jpg"
+                  alt="Photo of mountains next to lake"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">April 7th 2020</p>
+
+                <h3>World Tour 2019</h3>
+                <p>by Timothy Wagner</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/unforeseen-corners.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/unforeseen-corners.jpg"
+                  alt="Photo of a tree during sunset"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">April 3rd 2020</p>
+
+                <h3>Unforeseen Corners</h3>
+                <p>by William Malcolm</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/king-on-africa.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/king-on-africa.jpg"
+                  alt="Photo of lion"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 29th 2020</p>
+
+                <h3>King on Africa: Part II</h3>
+                <p>by Tim Hillenburg</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/trip-to-nowhere.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/trip-to-nowhere.jpg"
+                  alt="Photo of a tree next to water"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 21st 2020</p>
+
+                <h3>The Trip to Nowhere</h3>
+                <p>by Felicia Rourke</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/rage-of-the-sea.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/rage-of-the-sea.jpg"
+                  alt="Photo of the ocean during sunset"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 19th 2020</p>
+
+                <h3>Rage of The Sea</h3>
+                <p>by Mohammed Abdul</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/running-free.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/running-free.jpg"
+                  alt="Photo of horses in misty forest"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 16th 2020</p>
+
+                <h3>Running Free</h3>
+                <p>by Michelle</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/behind-the-waves.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/behind-the-waves.jpg"
+                  alt="Photo of ocean waves"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 11th 2020</p>
+
+                <h3>Behind the Waves</h3>
+                <p>by Lamarr Wilson</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/calm-waters.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/calm-waters.jpg"
+                  alt="Photo of mountains during sunset"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 9th 2020</p>
+
+                <h3>Calm Waters</h3>
+                <p>by Samantha Brooke</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/milky-way.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/milky-way.jpg"
+                  alt="Photo of a building at an angle"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 5th 2020</p>
+
+                <h3>The Milky Way</h3>
+                <p>by Benjamin Cruz</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/dark-forest.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/dark-forest.jpg"
+                  alt="Photo of snowy mountains"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 4th 2020</p>
+
+                <h3>Night at The Dark Forest</h3>
+                <p>by Mohammed Abdul</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/somwarpet.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/somwarpet.jpg"
+                  alt="Photo of plants"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">March 1st 2020</p>
+
+                <h3>Somwarpet's Beauty</h3>
+                <p>by Michelle</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <picture>
+                <source
+                  media="(min-width: 72rem)"
+                  srcset="assets/stories/desktop/land-of-dreams.jpg"
+                />
+                <img
+                  src="assets/stories/mobile/land-of-dreams.jpg"
+                  alt="Photo of church next to misty mountains"
+                  class="grid-img"
+                />
+              </picture>
+
+              <div class="grid-item-info">
+                <p class="story-date">February 25th 2020</p>
+
+                <h3>Land of Dreams</h3>
+                <p>by William Malcolm</p>
+                <hr />
+
+                <button type="button" class="transparent-btn">
+                  <span>Read story</span>
+                  <img
+                    src="assets/shared/desktop/arrow.svg"
+                    alt="Right arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <img
+          src="assets/shared/desktop/logo-footer.svg"
+          alt="Logo for Photosnap"
+          class="logo"
+        />
+
+        <ul class="social-links-footer">
+          <li>
+            <a href="https//facebook.com"
+              ><img
+                src="assets/shared/desktop/facebook.svg"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//youtube.com"
+              ><img src="assets/shared/desktop/youtube.svg" alt="Youtube icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//twitter.com"
+              ><img src="assets/shared/desktop/twitter.svg" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//pinterest.com"
+              ><img
+                src="assets/shared/desktop/pinterest.svg"
+                alt="Pinterest icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//instagram.com"
+              ><img
+                src="assets/shared/desktop/instagram.svg"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+
+        <ul class="navigation-links-footer">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <button type="button" class="transparent-btn">
+          <span>Get an invite </span>
+          <img src="assets/shared/desktop/arrow.svg" alt="Right arrow icon" />
+        </button>
+
+        <p>Copyright 2019. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
