@@ -135,9 +135,9 @@ main {
 
 /* -------------------------------- Home -------------------------------- */
 
-/* ------------------------------- */
-/* -------- Hero Section -------- */
-/* ----------------------------- */
+/* ------------------------------------- */
+/* -------- Home: Hero Section -------- */
+/* ----------------------------------- */
 
 .hero-item img {
   width: 100%;
@@ -204,9 +204,9 @@ main {
   filter: invert(1);
 }
 
-/* --------------------------------------- */
-/* -------- Home Stories Section -------- */
-/* ------------------------------------- */
+/* ---------------------------------------- */
+/* -------- Home: Stories Section -------- */
+/* -------------------------------------- */
 
 .home-stories-grid {
   display: grid;
@@ -258,9 +258,9 @@ main {
   filter: invert(1);
 }
 
-/* ---------------------------------------- */
-/* -------- Home Features Section -------- */
-/* -------------------------------------- */
+/* ----------------------------------------- */
+/* -------- Home: Features Section -------- */
+/* --------------------------------------- */
 
 .home-features-section {
   padding-block: 5rem;
@@ -362,6 +362,48 @@ footer {
   font-size: 0.9375rem;
 }
 
+/* -------------------------------- Stories -------------------------------- */
+
+/* ---------------------------------------- */
+/* -------- Stories: Hero Section -------- */
+/* -------------------------------------- */
+
+.stories-hero-section .hero-item-info {
+  padding: 3rem 1.75rem;
+}
+
+.stories-hero-section .info-wrapper:before {
+  content: none;
+}
+
+p.last-month {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+p.date {
+  font-size: 12px;
+}
+
+.date strong {
+  padding-left: 0.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+/* ----------------------------------------- */
+/* -------- Stories: Story Section -------- */
+/* --------------------------------------- */
+
+.grid-item-info .story-date {
+  padding-bottom: 0.2rem;
+}
+
+/* -------------------------------- Media Queries -------------------------------- */
+
 @media screen and (min-width: 37.5rem) {
   .home-stories-grid {
     grid-template-columns: 1fr 1fr;
@@ -406,12 +448,47 @@ footer {
   .info-wrapper h2 {
     padding-bottom: 1.25rem;
   }
+
+  /* Stories: Hero Section */
+
+  .stories-hero-section .hero-item {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .stories-hero-section .hero-item-info {
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: clamp(2.5rem, -2.643rem + 10.714vw, 7rem);
+    padding: 0;
+    max-width: 24.25rem;
+  }
+
+  p.last-month {
+    padding-bottom: 1rem;
+  }
+
+  p.story-summary {
+    padding-bottom: 1.5rem;
+  }
+
+  .stories-hero-section .hero-item-info h2 {
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  p.date {
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 48rem) {
   header {
     position: absolute;
   }
+
   .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -459,6 +536,19 @@ footer {
   .hero-item-info h2 {
     font-size: 2.5rem;
     letter-spacing: 4.17px;
+  }
+
+  /* Stories: Hero Section */
+
+  .stories-hero-section .hero-item-info {
+    padding: 0;
+  }
+
+  /* Stories: Story Section */
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   /* ----- Footer ----- */
@@ -533,6 +623,13 @@ footer {
 
     .home-features-grid:nth-child(2) img {
       margin-bottom: 4rem;
+    }
+
+    /* Stories: Story Section */
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     /* --- Footer --- */
