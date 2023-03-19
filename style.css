@@ -133,6 +133,8 @@ main {
   filter: brightness(0.4);
 }
 
+/* -------------------------------- Home -------------------------------- */
+
 /* ------------------------------- */
 /* -------- Hero Section -------- */
 /* ----------------------------- */
@@ -155,7 +157,7 @@ main {
 }
 
 .hero-item-info p {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
   padding-bottom: 1.5rem;
   line-height: 1.5rem;
   font-size: 0.9375rem;
@@ -184,6 +186,10 @@ main {
   background-color: #000;
   color: #fff;
   position: relative;
+}
+
+.hero-item-create p {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-item-create .hero-btn {
@@ -283,7 +289,7 @@ main {
 
 .home-features-section p {
   font-size: 0.9375rem;
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
   line-height: 25px;
 }
 
