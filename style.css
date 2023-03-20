@@ -268,7 +268,7 @@ main {
   background-color: #fff;
 }
 
-.home-features-grid {
+.features-grid {
   display: grid;
   gap: 3.5rem;
   text-align: center;
@@ -277,7 +277,7 @@ main {
   margin: auto;
 }
 
-.home-features-grid img {
+.features-grid img {
   margin: auto;
   margin-bottom: 3rem;
 }
@@ -610,18 +610,18 @@ p.date {
 
     /* --- Home Features --- */
 
-    .home-features-grid {
+    .features-grid {
       grid-template-columns: 1fr 1fr 1fr;
       max-width: none;
       justify-items: center;
       align-items: baseline;
     }
 
-    .home-features-grid div {
+    .features-grid div {
       max-width: 21.875rem;
     }
 
-    .home-features-grid:nth-child(2) img {
+    .features-grid:nth-child(2) img {
       margin-bottom: 4rem;
     }
 
