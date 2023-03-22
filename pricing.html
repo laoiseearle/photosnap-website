@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          src="assets/shared/desktop/logo.svg"
+          alt="Logo for Photosnap"
+          class="logo"
+        />
+        <img
+          src="assets/shared/mobile/menu.svg"
+          alt="Menu"
+          class="ham-icon"
+          id="ham"
+          onclick="menuToggle()"
+        />
+        <nav class="header-nav" id="menu">
+          <ul class="navigation-links">
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <button type="button" class="invite-btn">Get an invite</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pricing-hero-section">
+        <div class="hero-item hero-item-accent">
+          <picture>
+            <source
+              media="(min-width: 72rem)"
+              srcset="assets/pricing/desktop/hero.jpg"
+            />
+            <source
+              media="(min-width: 37rem)"
+              srcset="assets/pricing/tablet/hero.jpg"
+            />
+            <img
+              src="assets/pricing/mobile/hero.jpg"
+              alt="Photo of man sitting by rocks holding camera"
+            />
+          </picture>
+
+          <div class="hero-item-info">
+            <div class="info-wrapper">
+              <h2>Pricing</h2>
+              <p>
+                Create a your stories, Photosnap is a platform for photographers
+                and visual storytellers. It's the simple way to create and share
+                your photos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-plans">
+        <div class="plan-toggle">
+          <p id="textMonthly">Monthly</p>
+          <label class="toggle-btn">
+            <input type="checkbox" id="toggle" onclick="switchPlan()" />
+            <span class="checkbox-slider"></span>
+          </label>
+          <p id="textYearly">Yearly</p>
+        </div>
+
+        <div class="plan-grid">
+          <div class="plan-option">
+            <div class="plan-info">
+              <h3>Basic</h3>
+              <p>
+                Includes basic usage of our platform. Recommended for new and
+                aspiring photographers.
+              </p>
+
+              <div class="price">
+                <h2>$19.00</h2>
+                <p class="pricing-time-frame">per month</p>
+              </div>
+
+              <button class="plan-btn">Pick Plan</button>
+            </div>
+          </div>
+
+          <div class="plan-option">
+            <div class="plan-info plan-accent">
+              <h3>Pro</h3>
+              <p>
+                More advanced features available. Recommended for photography
+                veterans and professionals.
+              </p>
+              <div class="price">
+                <h2>$39.00</h2>
+                <p class="pricing-time-frame">per month</p>
+              </div>
+
+              <button class="plan-btn">Pick Plan</button>
+            </div>
+          </div>
+
+          <div class="plan-option">
+            <div class="plan-info plan-accent">
+              <h3>Business</h3>
+              <p>
+                Additional features available such as more detailed metrics.
+                Recommended for business owners.
+              </p>
+
+              <div class="price">
+                <h2>$99.00</h2>
+                <p class="pricing-time-frame">per month</p>
+              </div>
+
+              <button class="plan-btn" type="button">Pick Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="pricing-features"></section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <img
+          src="assets/shared/desktop/logo-footer.svg"
+          alt="Logo for Photosnap"
+          class="logo"
+        />
+
+        <ul class="social-links-footer">
+          <li>
+            <a href="https//facebook.com"
+              ><img
+                src="assets/shared/desktop/facebook.svg"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//youtube.com"
+              ><img src="assets/shared/desktop/youtube.svg" alt="Youtube icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//twitter.com"
+              ><img src="assets/shared/desktop/twitter.svg" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//pinterest.com"
+              ><img
+                src="assets/shared/desktop/pinterest.svg"
+                alt="Pinterest icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https//instagram.com"
+              ><img
+                src="assets/shared/desktop/instagram.svg"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+
+        <ul class="navigation-links-footer">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <button type="button" class="transparent-btn">
+          <span>Get an invite </span>
+          <img src="assets/shared/desktop/arrow.svg" alt="Right arrow icon" />
+        </button>
+
+        <p>Copyright 2019. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
