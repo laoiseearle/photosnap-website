@@ -1,6 +1,10 @@
 const hamburger = document.getElementById('ham');
 const menu = document.getElementById('menu');
 const mainContent = document.getElementsByTagName('main')[0];
+const toggle = document.getElementById('toggle');
+const textYearly = document.getElementById('textYearly');
+const textMonthly = document.getElementById('textMonthly');
+const pricing = document.querySelectorAll('.price');
 
 const closeMenu = () => {
   hamburger.src = 'assets/shared/mobile/menu.svg';
@@ -27,5 +31,31 @@ const menuToggle = () => {
     closeMenu();
   } else {
     openMenu();
+  }
+};
+
+const switchPlan = () => {
+  if (toggle.checked === true) {
+    textYearly.style.fontWeight = 'bold';
+    textMonthly.style.fontWeight = 'normal';
+
+    pricing.forEach(price => {
+      price.querySelector('p').innerText = 'per year';
+    });
+
+    pricing[0].querySelector('h2').innerText = '$190.00';
+    pricing[1].querySelector('h2').innerText = '$390.00';
+    pricing[2].querySelector('h2').innerText = '$990.00';
+  } else {
+    textMonthly.style.fontWeight = 'bold';
+    textYearly.style.fontWeight = 'normal';
+
+    pricing.forEach(price => {
+      price.querySelector('p').innerText = 'per month';
+    });
+
+    pricing[0].querySelector('h2').innerText = '$19.00';
+    pricing[1].querySelector('h2').innerText = '$39.00';
+    pricing[2].querySelector('h2').innerText = '$99.00';
   }
 };
