@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin-top: 4.5rem;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 }
@@ -36,6 +40,13 @@ button {
   background-color: transparent;
 }
 
+.plan-btn {
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
 @media (hover: hover) {
   button:hover {
     cursor: pointer;
@@ -49,10 +60,7 @@ button {
 img {
   display: block;
 }
-
-/* ------------------------- */
-/* -------- Header -------- */
-/* ----------------------- */
+/* -------------------------------- Header -------------------------------- */
 
 header {
   position: fixed;
@@ -64,8 +72,7 @@ header {
 }
 
 .header {
-  padding-block: 1.75rem;
-  padding-inline: 1.5rem;
+  padding: 1.75rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,6 +104,12 @@ header {
   padding: 2rem;
 }
 
+.overlay {
+  filter: brightness(0.4);
+}
+
+/* ----- Navigation Links ----- */
+
 .navigation-links {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -108,6 +121,8 @@ header {
   font-weight: 700;
   letter-spacing: 2.5px;
 }
+
+/* ----- Button ----- */
 
 .header button {
   margin-top: 1.25rem;
@@ -123,14 +138,6 @@ header {
     background-color: #dfdfdf;
     color: #000;
   }
-}
-
-main {
-  margin-top: 4.5rem;
-}
-
-.overlay {
-  filter: brightness(0.4);
 }
 
 /* -------------------------------- Home -------------------------------- */
@@ -247,6 +254,8 @@ main {
   border-top: none;
 }
 
+/* ----- Button ----- */
+
 .grid-item-info button {
   margin-bottom: 2.5rem;
   width: 100%;
@@ -291,75 +300,6 @@ main {
   font-size: 0.9375rem;
   color: rgba(0, 0, 0, 0.6);
   line-height: 25px;
-}
-
-/* ------------------------- */
-/* -------- Footer -------- */
-/* ----------------------- */
-
-footer {
-  background-color: #000;
-  color: #fff;
-}
-
-.footer {
-  display: grid;
-  padding: 3.5rem 2rem;
-  justify-items: center;
-}
-
-.footer .logo {
-  padding-bottom: 2rem;
-}
-
-.social-links-footer {
-  display: flex;
-  gap: 0.8125rem;
-  padding-bottom: 3rem;
-}
-
-.social-links-footer img {
-  filter: brightness(0) invert(1);
-}
-
-@media (hover: hover) {
-  .social-links-footer img:hover {
-    filter: none;
-  }
-
-  .navigation-links-footer li:hover {
-    opacity: 0.3;
-  }
-}
-
-.navigation-links-footer {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding-bottom: 7.5rem;
-}
-
-.navigation-links-footer a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-
-.footer button {
-  color: #fff;
-  padding-bottom: 2rem;
-}
-
-.footer button img {
-  filter: invert(1);
-}
-
-.footer p {
-  opacity: 0.5;
-  font-size: 0.9375rem;
 }
 
 /* -------------------------------- Stories -------------------------------- */
@@ -469,6 +409,8 @@ p.date {
   padding-bottom: 1.5rem;
 }
 
+/* ----- Button ----- */
+
 .call-to-action button span {
   color: #fff;
   padding-right: 1rem;
@@ -495,11 +437,11 @@ p.date {
   padding-bottom: 2.5rem;
 }
 
-/* ----- Toggle Btn ------ */
-
 p#textMonthly {
   font-weight: bold;
 }
+
+/* ----- Toggle Btn ----- */
 
 .toggle-btn {
   width: 4rem;
@@ -543,7 +485,7 @@ p#textMonthly {
   transform: translateX(2rem);
 }
 
-/* ----- Pricing Options ------ */
+/* ----- Pricing Options ----- */
 
 .plan-grid {
   display: grid;
@@ -583,14 +525,7 @@ p.pricing-time-frame {
   padding-bottom: 0;
 }
 
-.plan-info button {
-  width: 15rem;
-  height: 2.5rem;
-  background-color: #000;
-  color: #fff;
-}
-
-/* Second Plan Option */
+/* ----- Second Plan Option ----- */
 
 .plan-option:nth-of-type(2) {
   background-color: #000;
@@ -611,21 +546,97 @@ p.pricing-time-frame {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.plan-option:nth-of-type(2) button {
+/* ----- Button ----- */
+
+.plan-option:nth-of-type(2) .plan-btn {
   background-color: #fff;
   color: #000;
 }
 
 @media (hover: hover) {
-  .plan-info button:hover {
+  .plan-info .plan-btn:hover {
     background-color: #dfdfdf;
     color: #000;
   }
 }
 
+/* -------------------------------- Footer -------------------------------- */
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  padding: 3.5rem 2rem;
+  justify-items: center;
+}
+
+.footer .logo {
+  padding-bottom: 2rem;
+}
+
+/* ----- Social Links ----- */
+
+.social-links-footer {
+  display: flex;
+  gap: 0.8125rem;
+  padding-bottom: 3rem;
+}
+
+.social-links-footer img {
+  filter: brightness(0) invert(1);
+}
+
+@media (hover: hover) {
+  .social-links-footer img:hover {
+    filter: none;
+  }
+
+  .navigation-links-footer li:hover {
+    opacity: 0.3;
+  }
+}
+
+.navigation-links-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 7.5rem;
+}
+
+.navigation-links-footer a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* ----- Button ----- */
+
+.footer button {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.footer button img {
+  filter: invert(1);
+}
+
+.footer p {
+  opacity: 0.5;
+  font-size: 0.9375rem;
+}
 /* -------------------------------- Media Queries -------------------------------- */
 
 @media screen and (min-width: 37.5rem) {
+  /* -------------------------------- */
+  /* -------- Home: 37.5rem -------- */
+  /* ------------------------------ */
+
   .home-stories-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -670,7 +681,9 @@ p.pricing-time-frame {
     padding-bottom: 1.25rem;
   }
 
-  /* Stories: Hero Section */
+  /* ----------------------------------- */
+  /* -------- Stories: 37.5rem -------- */
+  /* --------------------------------- */
 
   .stories-hero-section .hero-item {
     grid-template-columns: 1fr;
@@ -704,7 +717,11 @@ p.pricing-time-frame {
     padding-bottom: 1.5rem;
   }
 
-  /* Features: Feature Section */
+  /* ------------------------------------ */
+  /* -------- Features: 37.5rem -------- */
+  /* ---------------------------------- */
+
+  /* ----- Features: Feature Section ----- */
 
   .features-feature-section .features-grid {
     grid-template-columns: 1fr 1fr;
@@ -713,7 +730,7 @@ p.pricing-time-frame {
     align-items: baseline;
   }
 
-  /* Features: Call to action */
+  /*  ----- Features: Call to action ----- */
 
   .call-to-action-info {
     display: grid;
@@ -740,7 +757,11 @@ p.pricing-time-frame {
     left: 0;
   }
 
-  /* Pricing: Plan Section */
+  /* ----------------------------------- */
+  /* -------- Pricing: 37.5rem -------- */
+  /* --------------------------------- */
+
+  /* ----- Pricing: Plan Section ----- */
 
   .pricing-plans {
     padding: 4rem 1.75rem;
@@ -760,6 +781,10 @@ p.pricing-time-frame {
 }
 
 @media screen and (min-width: 48rem) {
+  /* -------------------------------- */
+  /* -------- Header: 48rem -------- */
+  /* ------------------------------ */
+
   header {
     position: absolute;
   }
@@ -788,6 +813,8 @@ p.pricing-time-frame {
     height: 2.5rem;
   }
 
+  /* ----- Header: Navigation Links ----- */
+
   .navigation-links {
     display: flex;
     flex-direction: row;
@@ -808,25 +835,31 @@ p.pricing-time-frame {
     }
   }
 
+  /* ------------------------------ */
+  /* -------- Hero: 48rem -------- */
+  /* ---------------------------- */
+
   .hero-item-info h2 {
     font-size: 2.5rem;
     letter-spacing: 4.17px;
   }
 
-  /* Stories: Hero Section */
+  /* --------------------------------- */
+  /* -------- Stories: 48rem -------- */
+  /* ------------------------------- */
 
   .stories-hero-section .hero-item-info {
     padding: 0;
   }
-
-  /* Stories: Story Section */
 
   .story-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  /* ----- Footer ----- */
+  /* -------------------------------- */
+  /* -------- Footer: 48rem -------- */
+  /* ------------------------------ */
 
   .footer * {
     margin: 0;
@@ -850,6 +883,8 @@ p.pricing-time-frame {
     justify-self: end;
   }
 
+  /* ----- Footer: Links ----- */
+
   .social-links-footer {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -869,7 +904,10 @@ p.pricing-time-frame {
   }
 
   @media screen and (min-width: 72rem) {
-    /* --- Hero --- */
+    /* ------------------------------ */
+    /* -------- Home: 72rem -------- */
+    /* ---------------------------- */
+
     .hero-item {
       grid-template-columns: 1fr 1.36fr;
     }
@@ -878,13 +916,9 @@ p.pricing-time-frame {
       grid-template-columns: 1.36fr 1fr;
     }
 
-    /* --- Home Stories --- */
-
     .home-stories-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-    /* --- Home Features --- */
 
     .features-grid {
       grid-template-columns: 1fr 1fr 1fr;
@@ -901,27 +935,31 @@ p.pricing-time-frame {
       margin-bottom: 4rem;
     }
 
-    /* Stories: Story Section */
+    /* --------------------------------- */
+    /* -------- Stories: 72rem -------- */
+    /* ------------------------------- */
 
     .story-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    /* Features: Feature Section */
+    /* --------------0------------------- */
+    /* -------- Features: 72rem -------- */
+    /* -------------------------------- */
 
     .features-feature-section .features-grid {
       grid-template-columns: 1fr 1fr 1fr;
       padding-inline: 4.5rem;
     }
 
-    /* Features: Call to action */
-
     .call-to-action-info {
       padding-inline: 4.5rem;
     }
 
-    /* --- Footer --- */
+    /* -------------------------------- */
+    /* -------- Footer: 72rem -------- */
+    /* ------------------------------ */
 
     .footer {
       grid-template-rows: 1fr 1fr;
