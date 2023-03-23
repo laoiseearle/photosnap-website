@@ -5,6 +5,7 @@ const toggle = document.getElementById('toggle');
 const textYearly = document.getElementById('textYearly');
 const textMonthly = document.getElementById('textMonthly');
 const pricing = document.querySelectorAll('.price');
+const pricingPlans = document.querySelectorAll('.plan-info');
 
 const closeMenu = () => {
   hamburger.src = 'assets/shared/mobile/menu.svg';
@@ -58,4 +59,10 @@ const switchPlan = () => {
     pricing[1].querySelector('h2').innerText = '$39.00';
     pricing[2].querySelector('h2').innerText = '$99.00';
   }
+};
+
+const highlightPlan = id => {
+  pricingPlans.forEach(plan => plan.classList.remove('plan-accent'));
+
+  pricingPlans[id - 1].classList.add('plan-accent');
 };

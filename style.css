@@ -532,6 +532,7 @@ p.pricing-time-frame {
 .plan-accent {
   background-color: #000;
   color: #fff;
+  transition: background-color 0.4s ease-out;
 }
 
 .plan-accent::before {
