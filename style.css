@@ -492,16 +492,21 @@ p#textMonthly {
 .plan-grid {
   display: grid;
   gap: 1.5rem;
+  max-width: 45.625rem;
+  margin: auto;
 }
 
 .plan-option {
   background-color: #f5f5f5;
   position: relative;
-  padding-block: 3rem 2.5rem;
 }
 
 .price {
   padding-bottom: 2.5rem;
+}
+
+.plan-info {
+  padding-block: 3rem 2.5rem;
 }
 
 .plan-info p {
@@ -561,6 +566,68 @@ p.pricing-time-frame {
     background-color: #dfdfdf;
     color: #000;
   }
+}
+
+/* -------------------------------------------- */
+/* -------- Pricing: Features Section -------- */
+/* ------------------------------------------ */
+
+.pricing-features-section {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 4rem;
+}
+
+h2.compare {
+  display: none;
+  opacity: 0;
+}
+
+.pricing-features-section h3 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.pricing-feature-item h3 {
+  padding-bottom: 1rem;
+}
+
+.pricing-features-section p {
+  font-size: 0.625rem;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.67px;
+}
+
+.pricing-feature-item p {
+  padding-bottom: 0.5rem;
+}
+
+.pricing-feature-wrapper {
+  padding-inline: 1.75rem;
+  max-width: 45.625rem;
+  margin: auto;
+}
+
+.feature-header {
+  border-bottom: 1px solid black;
+  padding-bottom: 1.375rem;
+}
+
+/* Hide for mobile */
+.feature-header-plans {
+  display: none;
+  opacity: 0;
+}
+
+.pricing-feature-item {
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.checkmark-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
 }
 
 /* -------------------------------- Footer -------------------------------- */
@@ -815,6 +882,48 @@ footer {
     width: 0.375rem;
     height: 100%;
   }
+
+  /* ----- Pricing: Features ----- */
+
+  .pricing-features-section h3 {
+    width: 50%;
+    padding-left: 1.5rem;
+  }
+
+  .pricing-features-section p {
+    color: #000;
+  }
+
+  .feature-header-plans {
+    opacity: 1;
+  }
+
+  .pricing-feature-item,
+  .feature-header,
+  .feature-header-plans {
+    display: flex;
+  }
+
+  .checkmark-item p {
+    display: none;
+  }
+
+  .feature-header-plans,
+  .checkmark-group {
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 3.875rem;
+  }
+
+  /* Extra padding to make checkmarks equal width */
+  .pricing-feature-item:nth-of-type(2)
+    .checkmark-group
+    .checkmark-item:last-of-type,
+  .pricing-feature-item:nth-of-type(3)
+    .checkmark-group
+    .checkmark-item:last-of-type {
+    padding-left: 0.9375rem;
+  }
 }
 
 @media screen and (min-width: 48rem) {
@@ -998,9 +1107,23 @@ footer {
     /* -------- Pricing: 72rem -------- */
     /* ------------------------------- */
 
+    .pricing-features-section {
+      padding-block: 6rem 10rem;
+    }
+
+    h2.compare {
+      display: block;
+      opacity: 1;
+      text-align: center;
+      padding-bottom: 3.5rem;
+      letter-spacing: 4.17px;
+      font-size: 2.5rem;
+    }
+
     .plan-grid {
       display: flex;
       justify-content: center;
+      max-width: 69.375rem;
     }
 
     .plan-option {
